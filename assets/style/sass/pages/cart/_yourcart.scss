@@ -1,0 +1,224 @@
+#main{
+    .allcontent{
+        margin: 0 10px;
+         .toparea{
+            p{
+                font-family: 'Satoshi';
+                img{
+                    padding:0 11px;
+                }
+                span{
+                    font-family: 'Satoshi';
+                    color: rgb(156, 156, 156);
+                }
+            }
+            h3{
+                padding-top: 24px;
+                font-family: 'Integral';
+                font-size: 40px;
+            }
+         }
+         .productarea{
+            padding-top: 26px;
+            gap:20px;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr;
+            display: flex;
+            align-items: start;
+            justify-content: space-evenly;
+            .basket{
+                @include flex(start,space-between);
+                gap: 24px 0;
+                flex-direction: column;
+                max-width: 715px;
+                width: 100%;
+                border: 1px solid rgb(160, 160, 160);
+                border-radius: 20px;
+                padding: 20px 15px;
+                .line{
+                    border-top: 1px solid rgb(160, 159, 159);
+                }
+                .product{
+                    max-width: 689px;
+                    gap: 0 16px;
+                    @include flex();
+                    .productcontent{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px 0;
+                        .textc{
+                            font-family: 'Satoshi';
+                            font-size: 14px;
+                            span{
+                                font-family: 'Satoshi';
+                                font-size: 14px;
+                                color: rgb(160, 160, 160);
+                            }
+                        }
+                        .dimension{
+                            max-width: 547px;
+                            @include flex(space-between,center)
+                        }
+                        .name-trash{
+                            h3{
+                                font-family: 'Satoshi';
+                                font-size: 20px;
+                            }
+                        }
+                        .price{
+                            h3{
+                                font-family: 'Satoshi';
+                                font-size: 24px;
+                            } 
+                            p{
+                                height: 44px;
+                                width: 126px;
+                                background-color: #F0F0F0;
+                                border-radius: 62px;
+                                @include flex;
+                                span{
+                                    font-size: 14px;
+                                    font-family: 'Satoshi';
+                                    padding: 0 7px;
+                                }
+                                .point{
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .summary{
+                border: 1px solid rgb(160, 160, 160);
+                border-radius: 20px;
+                max-height: 458px;
+                max-width: 505px;
+                width: 100%;
+                flex-direction: column;
+                @include flex(start,start);
+                padding: 0 24px;
+                gap: 20px 0;
+                padding-bottom: 10px;
+                // padding-bottom: 10px;
+                h3{
+                    padding-top: 20px;
+                    font-size: 24px;
+                    font-family: 'Satoshi';
+                }
+                .line{
+                    border-top: 1px solid rgb(160, 159, 159);
+                }
+                p{
+                    @include flex(space-between,center);
+                    width: 100%;
+                    font-family: 'Satoshi';
+                    font-size: 20px;
+                    color: rgba(0, 0, 0, 0.6);
+                    span{
+                        color: black;
+                        font-weight: 700;
+                        font-family: 'Satoshi';
+
+                    }
+                    .disc{
+                        font-family: 'Satoshi';
+                        color: rgba(255, 51, 51, 1);
+                    }
+                }
+                .total{
+                    @include flex(space-between,center);
+                    width: 100%;
+                    color: black;
+                    .blacked{
+                        color: black;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                }
+                .promo{
+                    @include flex(space-between,center);
+                    width: 100%;
+                    .searchingP{
+                        padding: 0 15px;
+                        @include flex(start,center);
+                        max-width: 326px;
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 62px;
+                        background-color: #F0F0F0;
+                        img{
+                            margin: 0 12px 0 3px;
+                        }
+                        input{
+                            border: none;
+                            background-color: #F0F0F0;
+                            width: 100%;
+                        }
+                   
+                    }
+                    button{
+                        @include flex;
+                        padding: 14px 30px;
+                        font-size: 16px;
+                        font-family: 'Satoshi';
+                        color: white;
+                        background-color: black;
+                        border-radius: 62px;
+                        border: 1px solid black;
+                    }   
+                }
+                .bigbutton{
+                    @include flex;
+                    width: 100%;
+                    padding: 20px 0px;
+                    font-size: 16px;
+                    font-family: 'Satoshi';
+                    color: white;
+                    background-color: black;
+                    border-radius: 62px;
+                    border: 1px solid black;
+                }  
+            }
+         }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #main{
+        // margin: 0 10px;
+        .allcontent{
+            margin-bottom: 145px;
+             .toparea{
+                p{
+                    font-family: 'Satoshi';
+                    img{
+                        padding:0 11px;
+                    }
+                    span{
+                        font-family: 'Satoshi';
+                        color: rgb(156, 156, 156);
+                    }
+                }
+                h3{
+                    padding-top: 8px;
+                    font-family: 'Integral';
+                    font-size: 32px;
+                }
+             }
+             .productarea{
+                // flex-direction: column;
+                // @include flex(center,center);
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap: 20px 0;
+                .summary{
+                    padding-bottom: 10px;
+                }
+             }
+        }
+    }
+}

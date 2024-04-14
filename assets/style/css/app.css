@@ -1,0 +1,574 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Integral";
+  src: url(./../../fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./../../fonts/Satoshi-Regular.ttf);
+}
+* {
+  font-family: "Satoshi";
+}
+
+.graycolor {
+  background-color: rgb(240, 240, 240);
+}
+.graycolor footer {
+  margin: 0 8px;
+  position: relative;
+  margin-top: 170px;
+  height: 500px;
+}
+.graycolor footer .mainfooter {
+  border-bottom: 1px solid rgb(180, 179, 179);
+  padding-top: 140px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.graycolor footer .mainfooter .thefirst {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  max-width: 248px;
+  gap: 20px 0;
+}
+.graycolor footer .mainfooter .thefirst h1 {
+  font-family: "Integral";
+  font-size: 32px;
+}
+.graycolor footer .mainfooter .helpfaq {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 19px 0;
+}
+.graycolor footer .endarea {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.graycolor footer .positionarea {
+  top: -90px;
+  padding: 0 60px;
+  max-width: 1240px;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.graycolor footer .positionarea h3 {
+  font-family: "Integral";
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  max-width: 551px;
+}
+.graycolor footer .positionarea .promoX {
+  width: 100%;
+  max-width: 349px;
+}
+.graycolor footer .positionarea .promoX .searchingP {
+  padding: 0 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 349px;
+  width: 100%;
+  height: 48px;
+  border-radius: 62px;
+  background-color: white;
+}
+.graycolor footer .positionarea .promoX .searchingP img {
+  margin: 0 12px 0 3px;
+}
+.graycolor footer .positionarea .promoX .searchingP input {
+  border: none;
+  background-color: white;
+  width: 100%;
+}
+.graycolor footer .positionarea .promoX button {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 349px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0px;
+  font-size: 16px;
+  font-family: "Satoshi";
+  color: black;
+  background-color: white;
+  border-radius: 62px;
+  border: 1px solid black;
+  font-weight: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+  .graycolor footer {
+    height: 921px;
+  }
+  .graycolor footer .mainfooter {
+    gap: 17px 0;
+    padding-top: 190px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .graycolor footer .mainfooter .thefirst {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    max-width: 448px;
+    gap: 20px 0;
+  }
+  .graycolor footer .mainfooter .thefirst h1 {
+    font-family: "Integral";
+    font-size: 32px;
+  }
+  .graycolor footer .mainfooter .helpfaq {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 19px 0;
+  }
+  .graycolor footer .endarea {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .graycolor footer .positionarea {
+    top: -90px;
+    padding: 0 60px;
+    max-width: 1240px;
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .graycolor footer .positionarea h3 {
+    font-family: "Integral";
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    max-width: 551px;
+  }
+  .graycolor footer .positionarea .promoX {
+    width: 100%;
+    max-width: 349px;
+  }
+  .graycolor footer .positionarea .promoX .searchingP {
+    padding: 0 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 349px;
+    width: 100%;
+    height: 48px;
+    border-radius: 62px;
+    background-color: white;
+  }
+  .graycolor footer .positionarea .promoX .searchingP img {
+    margin: 0 12px 0 3px;
+  }
+  .graycolor footer .positionarea .promoX .searchingP input {
+    border: none;
+    background-color: white;
+    width: 100%;
+  }
+  .graycolor footer .positionarea .promoX button {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0px;
+    font-size: 13px;
+    font-family: "Satoshi";
+    color: black;
+    background-color: white;
+    border-radius: 62px;
+    border: 1px solid black;
+    font-weight: 500px;
+  }
+}
+.container {
+  margin: auto;
+  max-width: 1240px;
+}
+
+#head .blacklane {
+  background-color: black;
+}
+#head .blacklane .topbar {
+  position: relative;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head .blacklane .topbar p {
+  font-size: 14px;
+  font-family: "Satoshi";
+  color: white;
+}
+#head .blacklane .topbar p a {
+  font-size: 14px;
+  font-family: "Satoshi";
+  color: white;
+}
+#head .blacklane .topbar img {
+  position: absolute;
+  right: 0;
+}
+#head .navbar {
+  margin: 0 5px;
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#head .navbar .hamburger {
+  display: none;
+}
+#head .navbar .mainlogo {
+  padding-right: 15px;
+  text-decoration: none;
+}
+#head .navbar .mainlogo h1 {
+  color: black;
+  font-family: "Integral";
+  font-size: 32px;
+  font-weight: 700;
+}
+#head .navbar ul {
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+}
+#head .navbar ul a {
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+  font-family: "Satoshi";
+  size: 16px;
+  font-weight: 400;
+}
+#head .navbar .searching {
+  padding: 0 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 577px;
+  width: 100%;
+  height: 48px;
+  border-radius: 62px;
+  background-color: #F0F0F0;
+}
+#head .navbar .searching img {
+  margin: 0 12px 0 16px;
+}
+#head .navbar .searching input {
+  border: none;
+  background-color: #F0F0F0;
+  width: 70%;
+}
+#head .navbar .market {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+#head .navbar .market .lupamobil {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #head .blacklane .topbar p {
+    font-size: 11px;
+  }
+  #head .blacklane .topbar p a {
+    font-size: 11px;
+  }
+  #head .navbar {
+    height: 60px;
+    padding: 5px;
+  }
+  #head .navbar .hamburger {
+    display: block;
+    padding-right: 5px;
+  }
+  #head .navbar .mainlogo {
+    padding-right: 0px;
+    text-decoration: none;
+  }
+  #head .navbar .searching {
+    display: none;
+  }
+  #head .navbar ul {
+    display: none;
+  }
+  #head .navbar .market .lupamobil {
+    display: block;
+  }
+}
+#main .allcontent {
+  margin: 0 10px;
+}
+#main .allcontent .toparea p {
+  font-family: "Satoshi";
+}
+#main .allcontent .toparea p img {
+  padding: 0 11px;
+}
+#main .allcontent .toparea p span {
+  font-family: "Satoshi";
+  color: rgb(156, 156, 156);
+}
+#main .allcontent .toparea h3 {
+  padding-top: 24px;
+  font-family: "Integral";
+  font-size: 40px;
+}
+#main .allcontent .productarea {
+  padding-top: 26px;
+  gap: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+#main .allcontent .productarea .basket {
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+  gap: 24px 0;
+  flex-direction: column;
+  max-width: 715px;
+  width: 100%;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 20px;
+  padding: 20px 15px;
+}
+#main .allcontent .productarea .basket .line {
+  border-top: 1px solid rgb(160, 159, 159);
+}
+#main .allcontent .productarea .basket .product {
+  max-width: 689px;
+  gap: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .allcontent .productarea .basket .product .productcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+}
+#main .allcontent .productarea .basket .product .productcontent .textc {
+  font-family: "Satoshi";
+  font-size: 14px;
+}
+#main .allcontent .productarea .basket .product .productcontent .textc span {
+  font-family: "Satoshi";
+  font-size: 14px;
+  color: rgb(160, 160, 160);
+}
+#main .allcontent .productarea .basket .product .productcontent .dimension {
+  max-width: 547px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .allcontent .productarea .basket .product .productcontent .name-trash h3 {
+  font-family: "Satoshi";
+  font-size: 20px;
+}
+#main .allcontent .productarea .basket .product .productcontent .price h3 {
+  font-family: "Satoshi";
+  font-size: 24px;
+}
+#main .allcontent .productarea .basket .product .productcontent .price p {
+  height: 44px;
+  width: 126px;
+  background-color: #F0F0F0;
+  border-radius: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .allcontent .productarea .basket .product .productcontent .price p span {
+  font-size: 14px;
+  font-family: "Satoshi";
+  padding: 0 7px;
+}
+#main .allcontent .productarea .basket .product .productcontent .price p .point {
+  font-size: 22px;
+}
+#main .allcontent .productarea .summary {
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 20px;
+  max-height: 458px;
+  max-width: 505px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 0 24px;
+  gap: 20px 0;
+  padding-bottom: 10px;
+}
+#main .allcontent .productarea .summary h3 {
+  padding-top: 20px;
+  font-size: 24px;
+  font-family: "Satoshi";
+}
+#main .allcontent .productarea .summary .line {
+  border-top: 1px solid rgb(160, 159, 159);
+}
+#main .allcontent .productarea .summary p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Satoshi";
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+#main .allcontent .productarea .summary p span {
+  color: black;
+  font-weight: 700;
+  font-family: "Satoshi";
+}
+#main .allcontent .productarea .summary p .disc {
+  font-family: "Satoshi";
+  color: rgb(255, 51, 51);
+}
+#main .allcontent .productarea .summary .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: black;
+}
+#main .allcontent .productarea .summary .total .blacked {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+#main .allcontent .productarea .summary .promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#main .allcontent .productarea .summary .promo .searchingP {
+  padding: 0 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 326px;
+  width: 100%;
+  height: 48px;
+  border-radius: 62px;
+  background-color: #F0F0F0;
+}
+#main .allcontent .productarea .summary .promo .searchingP img {
+  margin: 0 12px 0 3px;
+}
+#main .allcontent .productarea .summary .promo .searchingP input {
+  border: none;
+  background-color: #F0F0F0;
+  width: 100%;
+}
+#main .allcontent .productarea .summary .promo button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-family: "Satoshi";
+  color: white;
+  background-color: black;
+  border-radius: 62px;
+  border: 1px solid black;
+}
+#main .allcontent .productarea .summary .bigbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-family: "Satoshi";
+  color: white;
+  background-color: black;
+  border-radius: 62px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 992px) {
+  #main .allcontent {
+    margin-bottom: 145px;
+  }
+  #main .allcontent .toparea p {
+    font-family: "Satoshi";
+  }
+  #main .allcontent .toparea p img {
+    padding: 0 11px;
+  }
+  #main .allcontent .toparea p span {
+    font-family: "Satoshi";
+    color: rgb(156, 156, 156);
+  }
+  #main .allcontent .toparea h3 {
+    padding-top: 8px;
+    font-family: "Integral";
+    font-size: 32px;
+  }
+  #main .allcontent .productarea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 0;
+  }
+  #main .allcontent .productarea .summary {
+    padding-bottom: 10px;
+  }
+}
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=app.css.map */

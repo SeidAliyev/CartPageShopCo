@@ -21,12 +21,12 @@
   background-color: rgb(240, 240, 240);
 }
 .graycolor footer {
-  margin: 0 8px;
   position: relative;
   margin-top: 170px;
   height: 500px;
 }
 .graycolor footer .mainfooter {
+  margin: 0 8px;
   border-bottom: 1px solid rgb(180, 179, 179);
   padding-top: 140px;
   padding-bottom: 50px;
@@ -246,7 +246,6 @@
   right: 0;
 }
 #head .navbar {
-  margin: 0 5px;
   height: 96px;
   display: flex;
   justify-content: space-between;
@@ -339,9 +338,6 @@
   #head .navbar .market .lupamobil {
     display: block;
   }
-}
-#main .allcontent {
-  margin: 0 10px;
 }
 #main .allcontent .toparea p {
   font-family: "Satoshi";
@@ -560,6 +556,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px 0;
+    margin: 0 6px;
   }
   #main .allcontent .productarea .summary {
     padding-bottom: 10px;

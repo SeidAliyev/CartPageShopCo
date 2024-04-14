@@ -27,7 +27,6 @@
         }
     }
     .navbar{
-    margin: 0 5px;
         height: 96px;
         @include flex(space-between,center);
         .hamburger{
